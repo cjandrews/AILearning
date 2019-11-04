@@ -156,3 +156,65 @@ console.log('.');
 //    ['Newcastle', 3, 24, 16, 0.6, 0.83, 'Watford', 2, 18, 9, 0.4, 0.9],
 //   ['Newcastle', 3, 24, 16, 0.6, 0.83, 'Watford', 2, 18, 9, 0.4, 0.9],
 //]
+
+
+
+// input: { red, green, blue }
+// ouput: { light, neutral, dark }
+
+// const colors = [
+//     { green: 0.2, blue: 0.4 },
+//     { green: 0.4, blue: 0.6 },
+//     { red: 0.2, green: 0.8, blue: 0.8 },
+//     { green: 1, blue: 1 },
+//     { red: 0.8, green: 1, blue: 1 },
+//     { red: 1, green: 1, blue: 1 },
+//     { red: 1, green: 0.8, blue: 0.8 },
+//     { red: 1, green: 0.6, blue: 0.6 },
+//     { red: 1, green: 0.4, blue: 0.4 },
+//     { red: 1, green: 0.31, blue: 0.31 },
+//     { red: 0.8 },
+//     { red: 0.6, green: 0.2, blue: 0.2 }
+// ];
+
+
+const matches = [
+    {a:1, b:1},
+    {c:1, b:1},
+    {a:1, d:1},
+    {d:1, b:1},
+    {e:1, a:1},
+    {a:1, c:1},
+    {b:1, e:1},
+    {d:1, c:1},
+];
+
+const matchstats = [
+    { g1: 0.3, s1: 0.2, g2: 0.2, s2:0.7 },
+    { g1: 0.2, s1: 0.9, g2: 0.1, s2:0.2 },
+    { g1: 0.1, s1: 0.2, g2: 0.4, s2:0.2 },
+    { g1: 0.0, s1: 0.7, g2: 0.0, s2:0.7 },
+    { g1: 0.1, s1: 0.8, g2: 0.4, s2:0.3 },
+    { g1: 0.0, s1: 0.5, g2: 0.1, s2:0.9 },
+    { g1: 0.2, s1: 0.5, g2: 0.1, s2:0.9 },
+    { g1: 0.2, s1: 0.5, g2: 0.7, s2:0.9 },
+];
+
+const trainingData = [];
+
+for (let i = 0; i < matches.length; i++) {
+    trainingData.push({
+        input: matches[i],
+        output: matchstats[i]
+    });
+}
+
+const net = new brain.NeuralNetwork({ hiddenLayers: [5,5] });
+
+const stats = net.train(trainingData);
+
+console.log(stats);
+
+console.log(net.run({
+    c: 1, d:1
+}));
