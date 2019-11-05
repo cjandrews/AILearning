@@ -1,3 +1,6 @@
+// Create a series of 'bitmaps' and see if you can match a random image to them with reliability
+// Given a bitmap with 4 different features, see if you can use 2 or 3 to predict the locaton of the 4th
+
 // rawData = ' # ';
 
 function toArray(string) { // normalize
