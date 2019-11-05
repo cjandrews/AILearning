@@ -238,6 +238,7 @@ const net = new brain.NeuralNetwork({ hiddenLayers: [3,5,3] });
 const stats = net.train(trainingData);
 
 console.log(stats);
+console.log(".");
 
 console.log(net.run(
   { Liverpool: 1, Man_City:1 }
