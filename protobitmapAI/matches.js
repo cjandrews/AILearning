@@ -233,7 +233,7 @@ for (let i = 0; i < matches.length; i++) {
     });
 }
 
-const net = new brain.NeuralNetwork({ hiddenLayers: [5,5] });
+const net = new brain.NeuralNetwork({ hiddenLayers: [20,20] });
 
 const stats = net.train(trainingData);
 
