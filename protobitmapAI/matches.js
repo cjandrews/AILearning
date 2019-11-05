@@ -233,12 +233,12 @@ for (let i = 0; i < matches.length; i++) {
     });
 }
 
-const net = new brain.NeuralNetwork({ hiddenLayers: [20,20] });
+const net = new brain.NeuralNetwork({ hiddenLayers: [5,5] });
 
 const stats = net.train(trainingData);
 
 console.log(stats);
 
 console.log(net.run(
-  { Arsenal: 1, Wolves:1 }
+  { Liverpool: 1, Man_City:1 }
 ));
