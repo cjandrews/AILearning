@@ -62,7 +62,7 @@ const stats = net.train(trainingData);
 console.log(stats);
 console.log(".");
 
-console.log("ce ");
+console.log("ec ");
 console.log(net.run(
   { e:1, c:1 }
 ));
@@ -70,7 +70,7 @@ console.log("ce ");
 console.log(net.run(
   { c:1, e:1 }
 ));
-console.log("cb ");
+console.log("bc ");
 console.log(net.run(
   { b:1, c:1 }
 ));
