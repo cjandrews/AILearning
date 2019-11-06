@@ -46,8 +46,11 @@ console.log(net.run(
   { e:1, c:1 }
 ));
 console.log(net.run(
+  { c:1, e:1 }
+));
+console.log(net.run(
   { b:1, c:1 }
 ));
 console.log(net.run(
-  { a:1, c:1 }
+  { c:1, b:1 }
 ));
