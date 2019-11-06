@@ -10,6 +10,8 @@ const matches = [
   { f:1, b:1 },
   { d:1, a:1 },
   { d:1, b:1 },
+  { b:1, c:1 },
+  { c:1, b:1 },
 ];
 
 const matchstats = [
@@ -42,15 +44,15 @@ const stats = net.train(trainingData);
 console.log(stats);
 console.log(".");
 
-console.log(net.run(
+console.log("ce " + net.run(
   { e:1, c:1 }
 ));
-console.log(net.run(
+console.log("ce " + net.run(
   { c:1, e:1 }
 ));
-console.log(net.run(
+console.log("cb " + net.run(
   { b:1, c:1 }
 ));
-console.log(net.run(
+console.log("cb " + net.run(
   { c:1, b:1 }
 ));
