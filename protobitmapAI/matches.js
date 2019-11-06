@@ -243,19 +243,3 @@ console.log(".");
 console.log(net.run(
   { Liverpool: 1, Man_City:1 }
 ));
-
-console.log(net.run(
-  { Liverpool: 1, Man_City:1 }
-));
-
-console.log(net.run(
-  { Liverpool: 1, Man_City:1 }
-));
-
-console.log(net.run(
-  { Liverpool: 1, Man_City:1 }
-));
-
-console.log(net.run(
-  { Liverpool: 1, Man_City:1 }
-));
