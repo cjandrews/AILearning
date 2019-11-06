@@ -44,15 +44,15 @@ const stats = net.train(trainingData);
 console.log(stats);
 console.log(".");
 
-console.log("ce " + net.run(
+console.log("ce ", net.run(
   { e:1, c:1 }
 ));
-console.log("ce " + net.run(
+console.log("ce ", net.run(
   { c:1, e:1 }
 ));
-console.log("cb " + net.run(
+console.log("cb ", net.run(
   { b:1, c:1 }
 ));
-console.log("cb " + net.run(
+console.log("cb ", net.run(
   { c:1, b:1 }
 ));
