@@ -10,8 +10,8 @@ const matches = [
   { f:1, b:1 },
   { d:1, a:1 },
   { d:1, b:1 },
-  // { b:1, c:1 },
-  // { c:1, b:1 },
+  { b:1, c:1 },
+  { c:1, b:1 },
 ];
 
 // const matchstats = [
@@ -42,8 +42,8 @@ const matchstats = [
   [ 1 ],
   [ 1 ],
   [ 1 ],
-  // { 1 },
-  // { 1 },
+  [ 1 ],
+  [ 0 ],
 ];
 
 const trainingData = [];
