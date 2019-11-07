@@ -15,19 +15,19 @@ const matches = [
 ];
 
 const matchstats = [
-  { a:1, HG:2, AG:1 },
-  { a:1, HG:3, AG:1 },
-  { a:1, HG:4, AG:1 },
-  { a:1, HG:5, AG:1 },
-  { a:1, HG:6, AG:1 },
-  { c:1, HG:2, AG:1 },
-  { d:1, HG:3, AG:1 },
-  { e:1, HG:4, AG:1 },
-  { f:1, HG:2, AG:1 },
-  { d:1, HG:3, AG:1 },
-  { d:1, HG:4, AG:1 },
-  { b:1, HG:3, AG:1 },
-  { b:1, HG:2, AG:1 },//breaks the pattern
+  { a:1, HG:0.2, AG:0.1 },
+  { a:1, HG:0.3, AG:0.1 },
+  { a:1, HG:0.4, AG:0.1 },
+  { a:1, HG:0.5, AG:0.1 },
+  { a:1, HG:0.6, AG:0.1 },
+  { c:1, HG:0.2, AG:0.1 },
+  { d:1, HG:0.3, AG:0.1 },
+  { e:1, HG:0.4, AG:0.1 },
+  { f:1, HG:0.2, AG:0.1 },
+  { d:1, HG:0.3, AG:0.1 },
+  { d:1, HG:0.4, AG:0.1 },
+  { b:1, HG:0.3, AG:0.1 },
+  { b:1, HG:0.2, AG:0.1 },//breaks the pattern
 ];
 
 // const matchstats = [
