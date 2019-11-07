@@ -64,7 +64,7 @@ console.log(".");
 
 console.log("ec ");
 console.log(net.run(
-  { e:1, c:1, home: "e"  }
+  { e:1, c:1, home: "e"  } 
 ));
 console.log("ce ");
 console.log(net.run(
