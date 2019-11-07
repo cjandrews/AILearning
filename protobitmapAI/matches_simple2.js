@@ -64,17 +64,17 @@ console.log(".");
 
 console.log("ec ");
 console.log(net.run(
-  { {e:1, home:1}, {c:1, home:0} }
+  { ho: {e:1, home:1}, aw: {c:1, home:0} }
 ));
 console.log("ce ");
 console.log(net.run(
-  { {c:1, home:1}, {e:1, home:0} }
+  { ho: {c:1, home:1}, aw: {e:1, home:0} }
 ));
 console.log("bc ");
 console.log(net.run(
-  { {b:1, home:1}, {c:1, home:0} }
+  { ho: {b:1, home:1}, aw: {c:1, home:0} }
 ));
 console.log("cb ");
 console.log(net.run(
-  { {c:1, home:1}, {b:1, home:0} }
+  { ho: {c:1, home:1}, aw: {b:1, home:0} }
 ));
