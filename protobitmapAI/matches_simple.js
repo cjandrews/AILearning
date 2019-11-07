@@ -15,7 +15,7 @@ const matches = [
 ];
 
 const matchstats = [
-  { a:1, HG:0.2, AG:0.1 },
+  { a:1, b:1, HG:0.0, AG:0.0 },// tie
   { a:1, HG:0.3, AG:0.1 },
   { a:1, HG:0.4, AG:0.1 },
   { a:1, HG:0.5, AG:0.1 },
@@ -27,7 +27,7 @@ const matchstats = [
   { d:1, HG:0.3, AG:0.1 },
   { d:1, HG:0.4, AG:0.1 },
   { b:1, HG:0.3, AG:0.1 },
-  { b:1, HG:0.2, AG:0.1 },//breaks the pattern
+  { b:1, HG:0.1, AG:0.2 },//Away win
 ];
 
 // const matchstats = [
