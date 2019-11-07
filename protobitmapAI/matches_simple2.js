@@ -15,19 +15,19 @@ const matches = [
 ];
 
 const matchstats = [
-  { a:1 },
-  { a:1 },
-  { a:1 },
-  { a:1 },
-  { a:1 },
-  { c:1 },
-  { d:1 },
-  { e:1 },
-  { f:1 },
-  { d:1 },
-  { d:1 },
-  { b:1 },
-  { b:1 },//breaks the pattern
+  { a:1, hg:1, ag: 0 },
+  { a:1, hg:1, ag: 0 },
+  { a:1, hg:1, ag: 0 },
+  { a:1, hg:4, ag: 2 },
+  { a:1, hg:2, ag: 1 },
+  { c:1, hg:1, ag: 0 },
+  { d:1, hg:1, ag: 0 },
+  { e:1, hg:3, ag: 1 },
+  { f:1, hg:1, ag: 0 },
+  { d:1, hg:2, ag: 1 },
+  { d:1, hg:1, ag: 0 },
+  { b:1, hg:2, ag: 0 },
+  { b:1, hg:1, ag: 2 },//breaks the pattern
 ];
 
 // const matchstats = [
@@ -64,7 +64,7 @@ console.log(".");
 
 console.log("ec ");
 console.log(net.run(
-  { e:1, c:1, home: "e"  } 
+  { e:1, c:1, home: "e"  }
 ));
 console.log("ce ");
 console.log(net.run(
