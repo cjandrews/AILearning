@@ -64,7 +64,7 @@ console.log(".");
 
 console.log("ec ");
 console.log(net.run(
-  { ho: {e:1, home:1}, aw: {c:1, home:0} }
+  { ho: {e:1, home:1}, aw: {c:1, home:0} } 
 ));
 console.log("ce ");
 console.log(net.run(
